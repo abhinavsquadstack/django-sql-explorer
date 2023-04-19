@@ -12,7 +12,7 @@ EXPLORER_SQL_WHITELIST = getattr(
     settings, 'EXPLORER_SQL_WHITELIST', ('CREATED', 'DELETED', 'REGEXP_REPLACE'))
 EXPLORER_DEFAULT_ROWS = getattr(settings, 'EXPLORER_DEFAULT_ROWS', 1000)
 EXPLORER_SCHEMA_EXCLUDE_APPS = getattr(settings, 'EXPLORER_SCHEMA_EXCLUDE_APPS', (
-    'django.contrib.auth', 'django.contrib.contenttypes', 'django.contrib.sessions', 'django.contrib.admin'))
+    'django.contrib.contenttypes', 'django.contrib.sessions', 'django.contrib.admin'))
 EXPLORER_TRANSFORMS = getattr(settings, 'EXPLORER_TRANSFORMS', [])
 EXPLORER_PERMISSION_VIEW = getattr(
     settings, 'EXPLORER_PERMISSION_VIEW', lambda u: u.is_staff)
